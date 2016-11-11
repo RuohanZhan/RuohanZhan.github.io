@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title> Multiscale Nonlocal</title>
+<title> Multiscale &amp; Nonlocal</title>
 <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="../css/common.css" type="text/css" rel="stylesheet" />
@@ -77,12 +77,12 @@
 												frame construction and image recovery, Journal of Scientific Computing, 63(2) (2015), 307-329.
 												</blockquote>
 										<h6>Motivation:</h6>
-											<p>Integrate the following three priors:</p>
-											<li><p>sparse nature of local intensity variations of images;</p></li>
-											<li><p>self-recursive prior of local image structure in the spatial domain; </p></li>
-									        <li><p>self-recursive prior of local image structure in the different scales. </p></li>
-											
-										<h6>BUild multi-scale nonlocal wavelet frames:</h6>	
+											<p>Integrate the following three priors:
+											<li>sparse nature of local intensity variations of images;</li>
+											<li>self-recursive prior of local image structure in the spatial domain; </li>
+									        <li>self-recursive prior of local image structure in the different scales. </li>
+											</p>
+										<h6>Build multi-scale nonlocal wavelet frames:</h6>	
 											<p>Suppose data is $f$. Then the multi-scale nonlocal wavelet frames are 
 											$D=1/&radic;2[W;J(f)W]$. It can be proved that $D$ is a frame system, 
 											and $D$ is a tight frame as long as $J(f)$ is a tight frame.</p>
@@ -91,14 +91,15 @@
 											a l1-penalty on Wf and J(f)Wf.</p>
 											
 										<h6>Comments</h6>
-											<li><p>Regularizing $l_1$ penalty on J(f)Wf is to punish <em style="font-size:70%">mean value</em> of wavelet coefficients in the
-											same group.</p></li>
-											<li><p>This paper uses a one-dimensional wavelet transformation, and two dimensional
+											<p>
+											<li>Regularizing $l_1$ penalty on J(f)Wf is to punish <em style="font-size:70%">mean value</em> of wavelet coefficients in the
+											same group;</li>
+											<li>This paper uses a one-dimensional wavelet transformation, and two dimensional
 												version may capture more information.
-												</p></li>
-											<li><p>A data-driven learned dictionary could be used to replace W.
-												</p>
-											</li>
+												</li>
+											<li>A data-driven learned dictionary could be used to replace W.
+												
+											</li></p>
 							       <!-- end blog-->
 											
 											

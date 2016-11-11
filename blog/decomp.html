@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title> PCA </title>
+<title> Decomposition &amp; Approximation  </title>
 <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="../css/common.css" type="text/css" rel="stylesheet" />
@@ -50,7 +50,6 @@
   <!--/ End grey separator -->
 	
 	
-	
             
                     
                     <!-- w3-content defines a container for fixed size centered content,
@@ -64,36 +63,28 @@
                                 <div class="w3-card-4 w3-margin w3-white">
                                    <!-- <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">-->
                                         <div class="w3-container w3-padding-8">
-                                            <h3><b>PCA</b></h3>
-                                            <h5>Geometric meaning, <span class="w3-opacity">November 4, 2016</span></h5>
+                                            <h3><b>Function Decomposition and Approximation</b></h3>
+                                            <h5>A summary of talk with Prof.Shen  <span class="w3-opacity">November 10, 2016</span></h5>
                                         </div>
                                         
                                         <div class="w3-container">
-                                            <h6>
-												PCA: Principle Component Analysis
-												</h6>
-											<p><b>Goal</b>
-												$X \in R^{m*n}$, with $n$ samples and $m$ features. Hope to find $p$(no greater than 
-												$m$) so that these directions are where data has largest variance.   
-												</p>
+									<!-- begin blog-->	
+											<p>
+						     There are basically four components of a function: <b>global pattern, local structure, global structure, random parts.</b>
+					
+									<li>Global Pattern is the recurvise pattern of the function, and could be approximated by periodic function.</li>
+									<li>Local Structure is the local feature of a function on a small scale, and could be approcimated by wavelets.</li>
+                                    <li>Global Structure is the feature on a large scale, for example, the whole shape of a house. This could be related to
+												people's recognition, and deep learning now might take an effect.</li>
+									<li>Random part is often the noisy component of the function. </li>
+											</p>
+											<p>For other more practical function decomposition, when we decompose a function, we should
+											take care of the meaning in the reality of each obtained component, that is, to understand
+												what this subfunction represents for.</p>
+							       <!-- end blog-->
 											
-												<p><b>Method, SVD:
-													</b>		
-											    <li> <em>Centralize data for each direction.</em>  $ X->X1 $;</li>
-												<li> $ X1=WDV'; Y=W'X=DV' $</li></p>
-												
-												
 											
-												
-									<p>
-										<b> Comment </b>
-									
-											<li> PCA for dimension reduction: discard the back rows of $Y$
-												</li>
-											
-									<li> Geometric Meaning of SVD: X1 can be seen as a linear transformation matrix. $X1(Vi)=di*Ui$ </li></p>
-										
-											                                            <div class="w3-row">
+											<div class="w3-row">
 
                                          <!--       <div class="w3-col m4 w3-hide-small">
                                                     <p><span class="w3-padding-large w3-right"><b>Comments</b> <span class="w3-tag">0</span></span></p>
@@ -151,6 +142,9 @@
 <!--/ End container -->
 </body>
 </html>
+
+
+
 
 
 
