@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> Quantum  </title>
+<!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../css/common.css" type="text/css" rel="stylesheet" />
+<link href="../css/blog.css" type="text/css" rel="stylesheet" />
+	                <style>
+                    body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif; text-align: left;}
+                    </style>
+</head>
+	
+	
+<body class="w3-light-grey">
+<div class="topBar"></div>
+<!-- Begin container -->
+<div id="container">
+  <!-- Begin contact -->
+  <div class="contactInfo">
+    <ul>
+     <li>Room 526, Building 35, No. 5 Yiheyuan Road</li>
+      <li>Peking University, Beijing, China, 100871</li>
+			<li>Email:<a href="mailto:ruohanzhan@gmail.com" style="color: #807873;"> ruohanzhan@gmail.com<a/></li>
+    </ul>
+  </div>
+  <!--/ End contact -->
+  <!-- Begin navigation container -->
+  <div class="navigationContainer">
+    <!-- Begin logo -->
+    <div class="logo"> <a href="index.html"><img src="../logo.png" alt="" width=150px /></a> </div>
+    <!--/ End logo -->
+    <!-- Begin navigation -->
+    <div class="navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+		  <li><a href="../RuohanZhan_cv.pdf">Curriculum Vitae</a></li>
+		  <li><a href="../research.html">Research</a></li>
+		   <li><a href="../fun_proj.html">Fun Projects</a></li>
+        <li class="active"><a href="../blog.html">Blog</a></li>
+       
+      </ul>
+    </div>
+    <!--/ End navigation -->
+  </div>
+  <!--/ End navigation container -->
+	
+  <!-- Begin grey separator -->
+  <div class="greySeparator"></div>
+  <!--/ End grey separator -->
+	
+	
+            
+                    
+                    <!-- w3-content defines a container for fixed size centered content,
+                     and is wrapped around the whole page content, except for the footer in this example -->
+                    <div class="w3-content" style="max-width:1400px">
+                        <div class="w3-row">
+                            
+                            <!-- Blog entries -->
+                            <div class="w3-col l8 s12" style="width:930px">
+                                <!-- Blog entry -->
+                                <div class="w3-card-4 w3-margin w3-white">
+                                   <!-- <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">-->
+                                        <div class="w3-container w3-padding-8">
+                                            <h3><b>Notes for Quantum chapter</b></h3>
+                                            <h5>2-norm probability, complex system <span class="w3-opacity">November 21, 2016</span></h5>
+                                        </div>
+                                        
+                                        <div class="w3-container">
+									<!-- begin blog-->	
+											<p>
+						    Here are notes for the Chapter Nine Quantum in book
+                            <a href="https://www.amazon.com/Quantum-Computing-since-Democritus-Aaronson/dp/0521199565/"> Quantum Computing since Democritus</a> by Dr. Scott Aaronson. It seems really magic...</p>
+					<h6>Complex and 2-norm generalization on probability</h6>
+                    <p> The classic probability system is based on non-negative and 1-norm, which comes naturally from the classical probability model. Quantum system generalizes it by describing a qubit's "random" state with complex system and 2-norm probability:
+                   <br>
+                   For one qubit, (&alpha;,&beta;)&rarr;&alpha;|0>+&beta;|1>, |&alpha;|<sup>2</sup>+|&beta;|<sup>2</sup>=1. The probability of seeing 0 is |&alpha;|<sup>2</sup>, and the probability of seeing 1 is |&beta;|<sup>2</sup>=1.
+            
+                    Therefore, the set of all status for one qubit forms a circle.
+                   </p>
+                   
+                   <h6>Operation: unitary matrix, transform qubit from one state to another state</h6>
+                   <p>
+                   The most natural 2norm-preservation operation.
+                   </p>
+                   
+                   <h6>Mixed States</h6>
+                   <p>Given a mixed state, calculate density matrix according to the distribution on different states. If two distribution gives the same density matrix, then these two are indistinguable, that is, the same mixed state. 
+											To describe a N-dimensional mixed state, we need N<sup>2</sup> independent real parameters to describe the Hermitian density matrix. </p>
+                   
+                   <h6>Why 2-norm?</h6>
+                  <p>
+                  <li>Only in p&le;2 cases, can we get the non-trivial linear transformations that preserve p-norm.
+                      </li>
+                  <li>
+                      cute litte fact: x<sup>p</sup>+y<sup>p</sup>=z<sup>p</sup>. Only in p&le;2 cases, can we get nontrivial integer solution.
+                      </li>
+                  </p>
+                  
+                  <h6>Why Complex System</h6>
+                  <p>
+                  <li>
+                      A mathematical observation: Comlex numbers are algebraically closed.
+                      </li>
+                  <li>
+                      Continuity assumption: any linear transformation is continuous: for any U, there exists V s.t. V<sup>2</sup>=U;
+                      </li>
+                  <li>
+                      Freedom coherence for combining mixed states: Use tensor product to combine two quantum system states. Therefore, for one quantum system A and another quantum system B, we use (N<sub>A</sub>N<sub>B</sub>)<sup>2</sup>=N<sub>A</sub><sup>2</sup>N<sub>B</sub><sup>2</sup> independent real parameters to describe the combined mixed states.
+                      </li>
+                  <li>
+                      Uniform Random Distribution: choose a quantum state uniformly at random, then the resulting probability vector is also distributed uniformly at random.
+                      </li>
+                  </p>
+                  
+                   <h6>Linearity</h6>
+                 <p>  Non-linearity can bring about very sharp gradient.</p>
+                   <blockquote style="font-size:70%;">
+                       If quantum mechanics were nonlinear, then not only could you solve NP-complete problems in polynomial time, you could also use EPR pairs to transmit information faster than the speed of light.
+                       <br>
+                       --<em>Quantum Computing since Democritus</em>, Page 124
+                   </blockquote>
+                   
+                   <h6>No-Cloning Theorem</h6>
+                   <p>
+                   Theory: There is no prodecure, consistent with quantum mechanics, that takes an unknown quantum state as input, and two separate copies as output.
+                   <li>
+                       its connection with Uncertainty Principle
+                       </li>
+                   <li>
+                       The famous application: Quantum Key Distribution(QKD), which can only be eavesdropped by
+                       the "man(woman)-in-the-middle" attack.
+                       </li>
+                   <li>
+                       Quantum teleportation(I love it so much in the <em>Star Trek</em>!!): send qubits over a classical channel. the EPR exampled protocol(but sadly I didn't much understand it, and need more thinking on it...)
+                       </li>
+                   </p>
+                 
+                   
+                    			
+							       <!-- end blog-->
+											
+											
+											<div class="w3-row">
+
+                                         <!--       <div class="w3-col m4 w3-hide-small">
+                                                    <p><span class="w3-padding-large w3-right"><b>Comments</b> <span class="w3-tag">0</span></span></p>
+                                                </div>  -->
+                                            </div>
+											    <div class="w3-col m8 s12">
+                                                    <p ><button class="w3-btn w3-padding-large w3-white w3-border w3-hover-border-black"><a href="../blog.html"><b>RETURN BACK</b></a></button></p>
+                                                </div>
+											
+							
+                                        </div>
+                               </div>
+                                <hr>
+                                
+                            </div>
+                            
+ 
+                             
+                            
+                            <!-- END GRID -->
+                        </div><br>
+                        
+                        <!-- END w3-content -->
+                  	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ 
+
+  <!--/ End portfolio content -->
+	
+	
+  <!-- Begin grey separator -->
+  <div class="greySeparator"></div>
+  <!--/ End grey separator -->
+	
+  <!-- Begin footer -->
+  <div class="footer"> Copyright &copy; 2016, <a href="#">Ruohan ZHAN</a>. All Rights Reserved. </a></div>
+  <!--/ End footer -->
+</div>
+<!--/ End container -->
+</body>
+</html>
+
+
+
+
+
+
+
