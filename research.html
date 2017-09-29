@@ -26,11 +26,10 @@ jQuery(document).ready(function () {
 <!-- Begin container -->
 <div id="container">
   <!-- Begin contact -->
-  <div class="contactInfo">
+  <div class="contactInfo"> 
     <ul>
-     <li>Room 526, Building 35, No. 5 Yiheyuan Road</li>
-      <li>Peking University, Beijing, China, 100871</li>
-			<li>Email:<a href="mailto:ruohanzhan@gmail.com" style="color: #807873;"> ruohanzhan@gmail.com<a/></li>
+      <li>Palo Alto CA, USA 94304</li>
+	<li>Email:<a href="mailto:rhzhan@stanford.edu" style="color: #807873;"> rhzhan@stanford.edu<a/></li>
     </ul>
   </div>
   <!--/ End contact -->
@@ -59,7 +58,79 @@ jQuery(document).ready(function () {
 	
 	
   <!-- Begin portfolio content -->
+
+    <div class="description">
+      <div class="pub_title">Data-driven Option Pricing with Shape Constraints
+		</div>
+      <h2>with Zheng Gong, advised by Prof. Zuowei Shen and Prof. Steven Kou. 09/2016-present</h2>
+      <p>In this project, we try to approximate the true option pricing function based on observed variables.
+          Mathematically, we firstly use basis functions to approximate a two-dimensional function 
+          with shape constraint. Wavelet tight frames are used to transform this continuous setting 
+        into a discrete setting. Then we fit wavelet coefficients to computationally-practically extrapolate
+          it to a three-dimensional
+ case to satisfy online data processing. Experiments on historical data shows our method's
+        abilities for more accurate estimation and less overfitting than previous model.</p>
+    </div>
+    <!--/ End description -->
+	  
+    <!-- Begin image -->
+	  <div class="image">
+
+			  <img src="research/ddoption/prob.pdf" alt="" height="200" width="200"/>
+			  
+		  </div>
+
+    <!--/ End image -->
+	  
+    <!-- Clear -->
+    <div class="clear"></div>
+	  
+    <!-- Begin grey separator -->
+    <div class="greySeparator"></div>
+	      
+    
+    
+    
+    
   <div class="portfolioContent">
+
+    <div class="description">
+      <div class="pub_title"> Adaptive Interpolation for Marginal Maximum Likelihood Estimation of Stochastic Volatility Model
+
+		</div>
+      <h2>Undergraduate thesis, advised by Prof. Chenxu Li. 03/2017-06/2017</h2>
+      <p>For marginal maximum loglikelihood estimation, we need to 
+          estimate corresponding loglikelihood with given model parameters
+          in the search path. My advisor Professor Chenxu Li developed a recursion
+          algorithm to solve it efficiently, and one major problem is to expand marginal 
+          functions according to the piecewise cubic polynomial basis. This thesis proposes 
+          an adaptive grid selecting algorithm to choose segment points in the basis expansion.
+          We firstly determine the grid range based on the stationary distribution, then the 
+          grid density according to the expansion accuracy. In the numerical experiments, 
+          we explore how to choose the algorithm thresholds, and also testify its 
+          convergence and ability to find local minimum in various simulation paths.</p>
+    </div>
+    <!--/ End description -->
+	  
+    <!-- Begin image -->
+	  <div class="image">
+
+			  <img src="research/mmle/filter_mean.jpg" alt="" height="200" width="200"/>
+			  
+		  </div>
+
+    <!--/ End image -->
+	  
+    <!-- Clear -->
+    <div class="clear"></div>
+	  
+    <!-- Begin grey separator -->
+    <div class="greySeparator"></div>
+	        
+      
+      
+      
+      
     <!-- Begin description -->
     <div class="description">
       <div class="pub_title">CT Image Reconstruction by Spatial-Radon Domain Data-Driven Tight Frame Regularization 
@@ -101,7 +172,7 @@ jQuery(document).ready(function () {
     <!-- Begin description -->
     <div class="description">
       <div class="pub_title">De-reflection via Two Wavelet Systems <a href="https://github.com/RuohanZhan/SRD-DDTF"> Code</a></div>
-      <h2>Ruohan Zhan, mentored by Prof. Zuowei Shen and Prof. Hui Ji.  </h2>
+      <h2>Ruohan Zhan, mentored by Prof. Zuowei Shen and Prof. Hui Ji. 09/2016-10/2016 </h2>
       <p>Layer separation for images taken through window is an under-determined problem, 
 		  which is hard to solve especially in the ambiguity in low frequency layers. 
 		  Ghosting phenomenon breaks symmetry in two layers, 
@@ -183,7 +254,7 @@ jQuery(document).ready(function () {
 		  <a href="https://github.com/RuohanZhan/Neural-Network-Algorithm/tree/master/notes">[Notes]</a>
 		 <a href="https://github.com/RuohanZhan/Neural-Network-Algorithm">[Code]</a>
 		</div>
-      <h2>Ruohan Zhan, discussed with Prof. Stanley Osher, Prof. Yuan Yao and Prof. Wotao Yin.  </h2>
+      <h2>Ruohan Zhan, discussed with Prof. Stanley Osher, Prof. Yuan Yao and Prof. Wotao Yin. 07/2016-09/2016</h2>
       <p>With the advent of big data era, neural network, as a powerful
     data learning tool, has drawn increasing attention, leading to the
     upsurge of researches on how to tune it effectively and efficiently.
@@ -213,7 +284,7 @@ jQuery(document).ready(function () {
   <!--/ End grey separator -->
 	
   <!-- Begin footer -->
-  <div class="footer"> Copyright &copy; 2017, <a href="index.html">Ruohan ZHAN</a>. All Rights Reserved. </a></div>
+  <div class="footer"> Copyright &copy; 2017, <a href="index.html">Ruohan Zhan</a>. All Rights Reserved. </a></div>
   <!--/ End footer -->
 </div>
 <!--/ End container -->
