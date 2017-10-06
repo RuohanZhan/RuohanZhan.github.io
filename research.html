@@ -64,11 +64,12 @@ jQuery(document).ready(function () {
 		</div>
       <h2>with Zheng Gong, advised by Prof. Zuowei Shen and Prof. Steven Kou. 09/2016-present</h2>
       <p>In this project, we try to approximate the true option pricing function based on observed variables.
-          Mathematically, we firstly use basis functions to approximate a two-dimensional function 
-          with shape constraint. Wavelet tight frames are used to transform this continuous setting 
+          Mathematically, we firstly use B-spline basis to approximate a two-dimensional function(option price with respect to 
+          strike and time to maturity)
+          with shape constraint(monotonically decreasing and convexity in strike). Wavelet tight frames are used to transform this continuous setting 
         into a discrete setting. Then we fit wavelet coefficients to computationally-practically extrapolate
           it to a three-dimensional
- case to satisfy online data processing. Experiments on historical data shows our method's
+ case, with the integration of stock price, to satisfy online data processing. Experiments on historical data shows our method's
         abilities for more accurate estimation and less overfitting than previous model.</p>
     </div>
     <!--/ End description -->
@@ -101,14 +102,14 @@ jQuery(document).ready(function () {
       <h2>Undergraduate thesis, advised by Prof. Chenxu Li. 03/2017-06/2017</h2>
       <p>For marginal maximum loglikelihood estimation, we need to 
           estimate corresponding loglikelihood with given model parameters
-          in the search path. My advisor Professor Chenxu Li developed a recursion
+          in the search path. My advisor Professor Chenxu Li developed a recurrence
           algorithm to solve it efficiently, and one major problem is to expand marginal 
-          functions according to the piecewise cubic polynomial basis. This thesis proposes 
-          an adaptive grid selecting algorithm to choose segment points in the basis expansion.
+          functions under piecewise cubic polynomial basis. This thesis proposes 
+          an adaptive grid selecting algorithm to choose segment points in the density expansion.
           We firstly determine the grid range based on the stationary distribution, then the 
-          grid density according to the expansion accuracy. In the numerical experiments, 
+          grid density according to the uniform approximation precision. In the numerical experiments, 
           we explore how to choose the algorithm thresholds, and also testify its 
-          convergence and ability to find local minimum in various simulation paths.</p>
+          convergence and ability to find smooth local minimum in various simulation paths.</p>
     </div>
     <!--/ End description -->
 	  
