@@ -28,7 +28,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </div>
   <div class="w3-bar-block">
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
-    <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-paperclip fa-fw w3-margin-right"></i>PUBLICATIONS</a> 
+    <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-book fa-fw w3-margin-right"></i>PUBLICATIONS</a> 
+      <a href="#teaching" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-solid fa-graduation-cap fa-fw w3-margin-right"></i>TEACHING</a> 
     <!-- <a href="CV.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-file-o fa-fw w3-margin-right"></i>CV</a> -->
   </div>
 </nav>
@@ -53,38 +54,23 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <p> Previously, I received my BS in mathematics from Peking University (2017), my MS in statistics and PhD in computational and applied mathematics from Stanford University (2021), where my doctoral research was advised by <a href="https://athey.people.stanford.edu">Susan Athey</a>. I have also been a postdoc fellow at Stanford Graduate School of Business in the <a href="https://www.gsb.stanford.edu/faculty-research/centers-initiatives/sil">Golub Capital Social Impact Lab</a> (2022).  
     </p>
 
-    <p> Outside of work, I enjoy exploring the local and being out in nature. </p>
+    <!-- <p> Outside of work, I enjoy exploring the local and being out in nature. </p> -->
   </div>
   </header>
 
   <!-- Research -->
   <div class="w3-container w3-padding-large" id="research" style="margin-bottom:32px">
-      <h3><b>Publications</b></h3>
-      <h4><b>Journal Papers</b></h4>
+      <h3><b>PUBLICATIONS</b></h3>
+     
+      
+      <h4><b>2023</b></h4>
       <p><b>Policy Learning with Adaptively Collected Data</b>. [<a href="https://arxiv.org/pdf/2105.02344">arxiv</a>, <a href="https://github.com/gsbDBI/PolicyLearning">software</a>]
       <br>Ruohan Zhan, Zhimei Ren, Susan Athey, Zhengyuan Zhou.
       <br>
        Management Science. Accepted, 2023.
       </p>
-
-      <p><b>Confidence intervals for policy evaluation in adaptive experiments</b>. [<a href="https://arxiv.org/abs/1911.02768">arxiv</a>, <a href="https://github.com/gsbDBI/adaptive-confidence-intervals">software</a>]
-      <br>
-      Vitor Hadad, David A. Hirshberg, Ruohan Zhan, Stefan Wager, Susan Athey.
-      <br>
-      Proceedings of the National Academy of Sciences 118.15, 2021.
-      </p>
       
-      <p><b>CT image reconstruction by spatial-radon domain data-driven tight frame regularization</b>.
-        [<a href="https://arxiv.org/abs/1601.00811">arxiv</a>]
-        <br>
-        Ruohan Zhan, Bin Dong.
-        <br> SIAM Journal on Imaging Sciences 9 (3), 1063-1083, 2016.
-      </p>
-      
-      <br>
-      
-      <h4><b>Conference Papers</b></h4>
-      
+            
       <p><b>ResAct: Reinforcing Long-term Engagement in Sequential Recommendation with Residual Actor</b>. [<a href="https://arxiv.org/pdf/2206.02620">arxiv</a>]
       <br> 
       Wanqi Xue, Qingpeng Cai, Ruohan Zhan, Dong Zheng, Peng Jiang, Kun Gai, Bo An.
@@ -98,6 +84,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <br>
       Proceedings of the Web Conference (WWW) 2023.
       </p>
+      
+      
+      <h4><b>2022</b></h4>
       
       <p><b>Deconfounding Duration Bias in Watch-time Prediction for Video Recommendation</b>. [<a href="https://arxiv.org/abs/2206.06003">arxiv</a>]
       <br> 
@@ -114,6 +103,18 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </p>
       
       
+      <h4><b>2021</b></h4>
+
+      <p><b>Confidence intervals for policy evaluation in adaptive experiments</b>. [<a href="https://arxiv.org/abs/1911.02768">arxiv</a>, <a href="https://github.com/gsbDBI/adaptive-confidence-intervals">software</a>]
+      <br>
+      Vitor Hadad, David A. Hirshberg, Ruohan Zhan, Stefan Wager, Susan Athey.
+      <br>
+      Proceedings of the National Academy of Sciences 118.15, 2021.
+      </p>
+  
+
+
+      
       <p><b>Off-Policy Evaluation via Adaptive Weighting with Data from Contextual Bandits</b>. [<a href="https://arxiv.org/abs/2106.02029">arxiv</a>, <a href="https://github.com/gsbDBI/contextual_bandits_evaluation">software</a>]
       <br> 
       Ruohan Zhan, Vitor Hadad, David A. Hirshberg, Susan Athey.
@@ -128,19 +129,54 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <br>
       Proceedings of the Web Conference (WWW) 2021.
       </p>
+      
+      <h4><b>Earlier years</b></h4>
+      
+      <p><b>
+      Distortion Agnostic Deep Watermarking.
+      </b> [<a href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Luo_Distortion_Agnostic_Deep_Watermarking_CVPR_2020_paper.pdf">paper</a>]
+      <br>
+      Xiyang Luo, Ruohan Zhan, Huiwen Chang, Feng Yang, Peyman Milanfar.
+      <br>
+      Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020.
+      </p>
+      
 
       <p><b>
       Machine learning for cardiac ultrasound time series data.
-      </b> [<a href="https://escholarship.org/content/qt15h378g9/qt15h378g9.pdfhttps://arxiv.org/abs/2001.04580">arxiv</a>]
+      </b> [<a href="https://escholarship.org/content/qt15h378g9/qt15h378g9.pdf">paper</a>]
       <br>
       Baichuan Yuan, Sathya R Chitturi, Geoffrey Iyer, Nuoyu Li, Xiaochuan Xu, Ruohan Zhan, Rafael Llerena, Jesse T Yen, Andrea L Bertozzi.
       <br>
       Medical Imaging: Biomedical applications in molecular, structural, and functional imaging (SPIE) 2017.
       </p>
       
+      <p><b>CT image reconstruction by spatial-radon domain data-driven tight frame regularization</b>.
+        [<a href="https://arxiv.org/abs/1601.00811">arxiv</a>]
+        <br>
+        Ruohan Zhan, Bin Dong.
+        <br> SIAM Journal on Imaging Sciences 9 (3), 1063-1083, 2016.
+      </p>
+      
+      <br>
+  
       
 
   </div>
+    
+    
+   <!-- Teaching -->
+  <div class="w3-container w3-padding-large" id="teaching" style="margin-bottom:32px">
+      <h3><b>TEACHING</b></h3>
+      <p><b>IEDA3560: Predictive Analysis</b>. 
+          
+      <br>
+       This course focuses on how companies identify, evaluate, and capture decision analytic opportunities to create value. Basic analytic methods as well as real corporate cases studies will be covered. The analytical methods include ways to use data to develop insights and predictive capabilities using machine learning, data mining, and forecasting techniques. Some aspects of the use of optimization methods to support decision-making in the presence of a large number of alternatives and business constraints will be covered. The concepts learned in this class should help students identify opportunities in which decision analytics can be used to improve performance and support important decisions.
+     This course is usually offered for each spring semester. For current information, see <a href="https://prog-crs.hkust.edu.hk/ugcourse/2022-23/search?keyword=ieda3560">course catalog</a>.
+      </p>
+
+
+  </div>  
   
     
   
